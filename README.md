@@ -1,13 +1,15 @@
+![Pages](https://github.com/generalplanet54-byte/Ubani/actions/workflows/gh-pages.yml/badge.svg)
+
 Ubani
 
 ## Deployment (GitHub Pages)
 
-This project is configured to publish the built site to the `docs/` folder so it can be served by GitHub Pages from the `main` branch.
+This project is configured to publish the built site to the `docs/` folder so it can be served by GitHub Pages from the `main` branch. A GitHub Actions workflow builds and deploys the `docs/` folder automatically on push to `main`.
 
 How it works:
 
-- `vite.config.ts` sets the `base` to `/Ubani/` and outputs the build to `docs/`.
-- A GitHub Actions workflow (`.github/workflows/gh-pages.yml`) builds the site on push to `main` and publishes the `docs/` folder to GitHub Pages.
+- `vite.config.ts` computes the correct `base` for GitHub Pages during CI and outputs the build to `docs/`.
+- The GitHub Actions workflow (`.github/workflows/gh-pages.yml`) builds the site and deploys it to Pages.
 
 To deploy manually:
 
