@@ -28,13 +28,16 @@ jobs:
       - name: Build
         env:
           # compute REPO_NAME from repo context
-          REPO_NAME: ${{ github.repository }}
+          # When using a custom domain we want assets to be referenced from '/'
+          REPO_NAME: /
         run: |
-          # github.repository is owner/repo; extract repo name only and make it '/repo/'
-          REPO_ONLY=$(echo "${GITHUB_REPOSITORY}" | cut -d'/' -f2)
-          export REPO_NAME="/${REPO_ONLY}/"
           echo "Using REPO_NAME=${REPO_NAME}"
           REPO_NAME="${REPO_NAME}" npm run build
+
+      - name: Add CNAME for custom domain
+        if: always()
+        run: |
+          echo "ubanihosting.co.za" > docs/CNAME
 
       - name: Upload artifact for Pages
         uses: actions/upload-pages-artifact@v1
