@@ -1,4 +1,3 @@
-import React from 'react';
 import { Server, Users, Award, Clock } from 'lucide-react';
 
 const About = () => {
@@ -11,19 +10,19 @@ const About = () => {
 
   const team = [
     {
-      name: "David Ubani",
-      role: "Founder & CEO",
-      description: "Passionate about providing reliable hosting solutions for South African businesses."
+      name: "C van Rooyen",
+      role: "Co-Founder",
+      description: "Committed to building robust hosting infrastructure and delivering value to clients."
     },
     {
-      name: "Sarah Mitchell",
-      role: "Technical Director",
-      description: "Expert in server management and web technologies with 10+ years experience."
+      name: "Bonolo Matonsi",
+      role: "Co-Founder",
+      description: "Focused on customer experience and innovative hosting solutions for South Africa."
     },
     {
-      name: "Michael Johnson",
-      role: "Customer Success Manager",
-      description: "Dedicated to ensuring our clients receive exceptional support and service."
+      name: "Thys Bothma",
+      role: "Co-Founder",
+      description: "Ensures operational excellence and technical leadership at Ubani Hosting."
     }
   ];
 
