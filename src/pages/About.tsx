@@ -15,12 +15,12 @@ const About = () => {
       description: "Committed to building robust hosting infrastructure and delivering value to clients."
     },
     {
-      name: "Bonolo Matonsi",
+      name: "B Matonsi",
       role: "Co-Founder",
       description: "Focused on customer experience and innovative hosting solutions for South Africa."
     },
     {
-      name: "Thys Bothma",
+      name: "T Bothma",
       role: "Co-Founder",
       description: "Ensures operational excellence and technical leadership at Ubani Hosting."
     }
@@ -110,7 +110,10 @@ const About = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Meet Our Team</h2>
             <p className="text-lg text-gray-600">
-              The dedicated professionals behind Ubani Hosting's success
+              The dedicated professionals behind Ubani Hosting's success.
+            </p>
+            <p className="text-sm text-gray-500 mt-2">
+              Founders: B Matonsi, C van Rooyen, T Bothma — over 29 years combined industry experience.
             </p>
           </div>
 
